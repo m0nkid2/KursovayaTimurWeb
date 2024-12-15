@@ -1,0 +1,317 @@
+.header {
+    margin: 0 10%;
+    padding: 0;
+    background-color: #1b1b1b;
+}
+
+.header__top {
+    display: flex;
+    align-items: center; /* Центрирование по вертикали */
+    justify-content: space-between; /* Равномерное распределение */
+    padding: 10px 0; /* Добавляет отступы сверху и снизу */
+}
+
+.header__logo {
+    width: 100%;
+    height: auto;
+}
+
+.header__top__catalog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%; /* Ширина блока */
+    height: 10%; /* Установить одинаковую высоту */
+    padding: 5px;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+}
+
+.header__top__catalog__a {
+    text-decoration: none;
+    color: #E8A236;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 180%;
+}
+
+.header__top__catalog:hover {
+    background-color: #272727;
+}
+
+.header__top__basket,
+.header__top__LK {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%; /* Установить фиксированную ширину */
+    height: 10%; /* Высота аналогичная "Каталогу" */
+    border-radius: 1%;
+    background-color: #1b1b1b;
+    margin-left: 0.5%; /* Отступ между элементами */
+}
+
+.header__top__basket__img {
+    width: 60%;
+    height: 60%;
+}
+
+.header__top__LK__a {
+    text-decoration: none;
+    color: #E8A236;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 180%;
+    text-align: center;
+}
+
+
+body{
+    background-color: #212121;
+    color:#E8A236 ;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+    transition: color 0.3s ease, background-color 0.3s ease; 
+}
+
+a:hover {
+    color: #ffbf60; 
+}
+
+.text{
+    text-decoration: none;
+    font-size: 100%;
+    color: #E8A236;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.content{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    padding: 2%;
+}
+.content__title{
+    font-size: 2.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.content__section {
+    margin-bottom: 20px;
+}
+.content__list {
+    list-style-type: none;
+    padding-left: 0;
+}
+.content__list-item {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.text__a{
+    text-decoration: none;
+    font-size: 100%;
+    color: #E8A236;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.body_title{
+    margin: 0px;
+    padding: 0px;
+}
+
+footer{
+    margin-left: 19%;
+    margin-right: 10%;
+    margin-top: 4%;
+}
+footer a:hover{
+    color: burlywood;
+}
+.footer__block{
+    display: inline-block;
+    padding-right: 8%;
+}
+.body{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    height: 100%;
+}
+
+
+/* Слайдер */
+
+.hot-products {
+    text-align: center;
+    margin-top: 5%;
+}
+.hot-products__title {
+    font-size: 2.5rem; 
+    color: #E8A236; 
+    font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    margin-bottom: 20px; 
+    letter-spacing: 1px; 
+    text-transform: uppercase; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.hot-products__slider {
+    position: relative;
+    width: 80%; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    border-radius: 15px; 
+}
+
+.hot-products__img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+    border-radius: 10px; 
+}
+
+.hot-products__img:not(:first-child) {
+    display: none; 
+}
+
+.hot-products__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.hot-products__arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.hot-products__arrow--left {
+    left: 10px;
+}
+
+.hot-products__arrow--right {
+    right: 10px;
+}
+
+/* Body */
+
+
+.body__categories__text{
+    font-size: 200%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 30%;
+    height: 20%;
+    margin-top: 5%;
+    margin-left: 40%;
+    margin-bottom: 5%;
+}
+.body__categories__table{
+    margin-right: 3%;
+    margin-left: -1%;
+}
+.body__categories__table tr {
+    width: 100%;
+}
+.body__categories__table td {
+    width: 15%;
+    height: 25%;
+    border-radius: 20%;
+    padding: 2%;
+    font-size: 150%;
+}
+.body__categories__table img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+}
+.body__categories__table img:hover {
+    width: 101%;
+}
+.body__categories__table__td__img td:hover {
+    background-color: #1b1b1b;
+}
+.body_categories__table__td__name {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 10%;
+}
+
+.form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+}
+.form__title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+.form__group {
+    margin-bottom: 15px;
+}
+.form__label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+.form__input, .form__textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #E8A236;
+    border-radius: 5px;
+    background-color: #212121;
+    color: #E8A236;
+}
+.form__textarea {
+    height: 100px;
+    resize: none;
+}
+.form__button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #212121;
+    background-color: #E8A236;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form__button:hover {
+    background-color: #ffbf60;
+}
+
+.search-results {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    background-color: #1b1b1b;
+    border: 1px solid #E8A236;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search-result-item {
+    padding: 10px;
+    cursor: pointer;
+    color: #E8A236;
+}
+
+.search-result-item:hover {
+    background-color: #272727;
+}

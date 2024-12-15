@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подарки 23 февраля</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" async></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <a href="index.html"><img src="img/logo.svg" alt="Логотип" class="header__logo"></a>
+            <div class="header__top__catalog">
+                <a href="Catalog.html" class="header__top__catalog__a">Каталог</a>
+            </div>
+            <div class="header__top__basket">
+                <img src="img/basket.png" alt="Корзина" title="Корзина" class="header__top__basket__img">
+            </div>
+            <div class="header__top__LK">
+                <a href="" class="header__top__LK__a">Личный кабинет</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Фильтры -->
+        <section class="filters">
+            <div class="filter__item">
+                <label for="price-min">Минимальная цена:</label>
+                <input type="number" id="price-min" value="0" onchange="filterProducts()">
+            </div>
+            <div class="filter__item">
+                <label for="price-max">Максимальная цена:</label>
+                <input type="number" id="price-max" value="10000" onchange="filterProducts()">
+            </div>
+            <div class="filter__item">
+                <label for="category">Категория:</label>
+                <select id="category" onchange="filterProducts()">
+                    <option value="all">Все</option>
+                    <option value="shaving">Наборы для бритья</option>
+                    <option value="wallets">Кошельки</option>
+                    <option value="tools">Инструменты</option>
+                    <option value="certificates">Сертификаты</option>
+                    <option value="watches">Часы</option>
+                    <option value="razors">Бритвенные станки</option>
+                    <option value="mugs">Термокружки</option>
+                    <option value="belts">Ремни</option>
+                    <option value="scarves">Шарфы</option>
+                    <option value="cufflinks">Запонки</option>
+                </select>
+            </div>
+        </section>
+    
+        <!-- Товары -->
+        <section class="main__categories">
+            <div class="main__categories-item" data-price="12000" data-category="shaving">
+                <a href="gift1.html"><img src="gifts/gift1.jpg" alt="Подарок 1"></a>
+                <h3>Набор для бритья</h3>
+                <p>12000₽</p>
+            </div>
+            <div class="main__categories-item" data-price="2500" data-category="wallets">
+                <a href="gift2.html"><img src="gifts/gift2.webp" alt="Подарок 2"></a>
+                <h3>Кожаный кошелек</h3>
+                <p>2500₽</p>
+            </div>
+            <div class="main__categories-item" data-price="6000" data-category="tools">
+                <a href="gift3.html"><img src="gifts/gift3.jpg" alt="Подарок 3"></a>
+                <h3>Набор инструментов</h3>
+                <p>6000₽</p>
+            </div>
+            <div class="main__categories-item" data-price="1000" data-category="certificates">
+                <a href="gift4.html"><img src="gifts/gift4.jpg" alt="Подарок 4"></a>
+                <h3>Подарочный сертификат</h3>
+                <p>1000₽</p>
+            </div>
+            <div class="main__categories-item" data-price="4000" data-category="watches">
+                <a href="gift5.html"><img src="gifts/gift5.jpg" alt="Подарок 5"></a>
+                <h3>Часы</h3>
+                <p>4000₽</p>
+            </div>
+            <div class="main__categories-item" data-price="1500" data-category="razors">
+                <a href="gift6.html"><img src="gifts/gift6.webp" alt="Подарок 6"></a>
+                <h3>Бритвенный станок</h3>
+                <p>1500₽</p>
+            </div>
+            <div class="main__categories-item" data-price="1200" data-category="mugs">
+                <a href="gift7.html"><img src="gifts/gift7.webp" alt="Подарок 7"></a>
+                <h3>Термокружка</h3>
+                <p>1200₽</p>
+            </div>
+            <div class="main__categories-item" data-price="2400" data-category="belts">
+                <a href="gift8.html"><img src="gifts/gift8.webp" alt="Подарок 8"></a>
+                <h3>Ремень</h3>
+                <p>2400₽</p>
+            </div>
+            <div class="main__categories-item" data-price="3000" data-category="scarves">
+                <a href="gift9.html"><img src="gifts/gift9.webp" alt="Подарок 9"></a>
+                <h3>Шарф</h3>
+                <p>3000₽</p>
+            </div>
+            <div class="main__categories-item" data-price="2000" data-category="cufflinks">
+                <a href="gift10.html"><img src="gifts/gift10.webp" alt="Подарок 10"></a>
+                <h3>Запонки</h3>
+                <p>2000₽</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__block">
+            <div class="text">
+                Нашь офис здесь! <br>
+                <a href="https://yandex.ru/maps/-/CDd9E0zc" class="text__a">Владимир ул. Мира 34А</a>
+            </div>
+        </div>
+        <div class="footer__block">
+            <div class="text">
+                Позвони нам если есть вопросы! <br>
+                <a href="tel:+8800553535" class="text__a">+8 800 55 35 35</a>
+            </div>
+        </div>
+        <div class="footer__block">
+            <div class="text">
+                По вопросам сотрудничества обращаться <br>
+                <a href="mail:m0nkid@yandex.ru" class="text__a">m0nkid@yandex.ru</a>
+            </div>
+        </div>
+        <div class="footer__block">
+            <div class="text">
+                <a href="about_us.html" class="text__a">Про нас</a>
+                <br>
+                <div>&nbsp</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

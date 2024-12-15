@@ -1,0 +1,166 @@
+/* Основные стили */
+body{
+    background-color: #212121;
+    color:#E8A236 ;
+}
+.header {
+    margin: 0 10%;
+    padding: 0;
+    background-color: #1b1b1b;
+}
+
+.header__top {
+    display: flex;
+    align-items: center; /* Центрирование по вертикали */
+    justify-content: space-between; /* Равномерное распределение */
+    padding: 10px 0; /* Добавляет отступы сверху и снизу */
+}
+
+.header__logo {
+    width: 100%;
+    height: auto;
+}
+
+.header__top__catalog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%; /* Ширина блока */
+    height: 10%; /* Установить одинаковую высоту */
+    padding: 5px;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+}
+
+.header__top__catalog__a {
+    text-decoration: none;
+    color: #E8A236;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 180%;
+}
+
+.header__top__catalog:hover {
+    background-color: #272727;
+}
+
+.header__top__basket,
+.header__top__LK {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%; /* Установить фиксированную ширину */
+    height: 10%; /* Высота аналогичная "Каталогу" */
+    border-radius: 1%;
+    background-color: #1b1b1b;
+    margin-left: 0.5%; /* Отступ между элементами */
+}
+
+.header__top__basket__img {
+    width: 60%;
+    height: 60%;
+}
+
+.header__top__LK__a {
+    text-decoration: none;
+    color: #E8A236;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 180%;
+    text-align: center;
+}
+.body_title{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Основной контент */
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.main__categories {
+    width: 75%; /* Оставшееся пространство для товаров */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main__categories-item {
+    width: 48%;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.main__categories-item:hover {
+    background-color: #272727;
+    transform: scale(1.05);
+}
+
+.main__categories-item img {
+    width: 100%;
+    height: auto;
+}
+
+.main__categories-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.main__categories-item p {
+    color: #E8A236;
+}
+
+/* Фильтр */
+.filters {
+    width: 25%;  /* Фильтр занимает 25% от ширины */
+    padding: 20px;
+    background-color: #272727;
+    border-right: 2px solid #ddd;
+}
+
+.filter__item {
+    margin-bottom: 20px;
+}
+
+.filter__item label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.filter__item input,
+.filter__item select {
+    padding: 5px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+/* Футер */
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1B1B1B;
+    color: #E8A236;
+    padding: 2% 10%;
+}
+
+.footer__block {
+    text-align: center;
+}
+
+.text {
+    font-size: 1em;
+}
+
+.text__a {
+    text-decoration: none;
+    color: #E8A236;
+    font-weight: bold;
+}
+
+.text__a:hover {
+    color: burlywood;
+}

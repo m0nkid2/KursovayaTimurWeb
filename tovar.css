@@ -1,0 +1,204 @@
+.header {
+    margin: 0 10%;
+    padding: 0;
+    background-color: #1b1b1b;
+}
+
+.header__top {
+    display: flex;
+    align-items: center; /* Центрирование по вертикали */
+    justify-content: space-between; /* Равномерное распределение */
+    padding: 10px 0; /* Добавляет отступы сверху и снизу */
+}
+
+.header__logo {
+    width: 100%;
+    height: auto;
+}
+
+.header__top__catalog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%; /* Ширина блока */
+    height: 10%; /* Установить одинаковую высоту */
+    padding: 5px;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+}
+
+.header__top__catalog__a {
+    text-decoration: none;
+    color: #E8A236;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 180%;
+}
+
+.header__top__catalog:hover {
+    background-color: #272727;
+}
+
+.header__top__basket,
+.header__top__LK {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%; /* Установить фиксированную ширину */
+    height: 10%; /* Высота аналогичная "Каталогу" */
+    border-radius: 1%;
+    background-color: #1b1b1b;
+    margin-left: 0.5%; /* Отступ между элементами */
+}
+
+.header__top__basket__img {
+    width: 60%;
+    height: 60%;
+}
+
+.header__top__LK__a {
+    text-decoration: none;
+    color: #E8A236;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 180%;
+    text-align: center;
+}
+
+body{
+    background-color: #212121;
+    color:#E8A236 ;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+    transition: color 0.3s ease, background-color 0.3s ease; 
+}
+
+a:hover {
+    color: #ffbf60; 
+}
+
+.content {
+    display: flex;
+    margin: 20px 10%;
+}
+
+.content__photo, 
+.content__description, 
+.content__payment {
+    padding: 20px;
+    background-color: #272727;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.content__photo {
+    flex: 1;
+    text-align: center;
+}
+.content__photo__img {
+    height: 100%;
+    width: 100%;
+}
+
+.content__description {
+    text-align: center;
+    flex: 1;
+}
+.content__description h2 {
+    color: #E8A236;
+    
+}
+
+.content__payment {
+    text-align: center;
+    flex: 1;
+    margin-right: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 180%;
+
+}
+.add-to-cart {
+    background-color: #272727; /* Зеленый фон */
+    color: #ffbf60; /* Белый текст */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 4%;
+    margin-top: 1%; /* Отступ сверху */
+    transition: background-color 0.3s ease;
+}
+
+/* Стили при наведении на кнопку */
+.add-to-cart:hover {
+    background-color: #3b3b3b;
+}
+
+.details, .recommendations, .reviews {
+    margin: 20px 10%;
+    padding: 20px;
+    background-color: #272727;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.recommendations {
+    text-align: center; /* Центрируем текст */
+    padding: 20px;
+    color: #E8A236;
+}
+
+.recommendations__gifts-container {
+    display: flex; /* Выставляем изображения в ряд */
+    justify-content: center; /* Центрируем изображения */
+    gap: 20px; /* Отступ между изображениями */
+    margin-top: 15px; /* Отступ сверху для картинок */
+}
+
+.recommendations__gifts {
+    max-width: 200px; /* Ограничиваем размер картинок */
+    height: auto; /* Сохраняем пропорции */
+}
+
+.recommendations img:hover {
+    transform: scale(1.05);
+}
+
+.reviews div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #1b1b1b;
+    border: 1px solid #E8A236;
+    border-radius: 10px;
+    color: #E8A236;
+}
+.reviews {
+    color: #E8A236;
+}
+
+.details__title{
+    color: #E8A236;
+}
+footer{
+    margin-left: 19%;
+    margin-right: 10%;
+    margin-top: 4%;
+}
+footer a:hover{
+    color: burlywood;
+}
+.footer__block{
+    display: inline-block;
+    padding-right: 8%;
+}
+.body{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    height: 100%;
+}
